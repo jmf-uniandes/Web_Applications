@@ -1,4 +1,5 @@
 <?php
+// ----------------------- Parte II -----------------------------
 // a. Declaración de Variables
 $resistor1 = 220;         // Resistencia 1 en ohmios (integer)
 $resistor2 = 330;         // Resistencia 2 en ohmios (integer)
