@@ -7,7 +7,7 @@ $method = $_SERVER["REQUEST_METHOD"];
 if ($method == "OPTIONS") {
     die();
 }
-//TODO: controlador de proveedores
+TODO: controlador de proveedores
 
 require_once('../models/proveedores.model.php');
 error_reporting(0);
