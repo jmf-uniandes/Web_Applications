@@ -16,7 +16,7 @@ $proveedores = new Provedores;
 switch ($_GET["op"]) {
         //TODO: operaciones de proveedores
 
-    case 'todos': //TODO: Procedimeinto para cargar todos las datos de los proveedores
+    case 'todos': //TODO: Procedimiento para cargar todos las datos de los proveedores
         $datos = array(); // Defino un arreglo para almacenar los valores que vienen de la clase proveedores.model.php
         $datos = $proveedores->todos(); // Llamo al metodo todos de la clase proveedores.model.php
         while ($row = mysqli_fetch_assoc($datos)) //Ciclo de repeticon para asociar los valor almancenados en la variable $datos
@@ -25,7 +25,7 @@ switch ($_GET["op"]) {
         }
         echo json_encode($todos);
         break;
-        //TODO: procedimeinto para obtener un registro de la base de datos
+        //TODO: Procedimiento para obtener un registro de la base de datos
     case 'uno':
         $idProveedores = $_POST["idProveedores"];
         $datos = array();
@@ -33,7 +33,7 @@ switch ($_GET["op"]) {
         $res = mysqli_fetch_assoc($datos);
         echo json_encode($res);
         break;
-        //TODO: Procedimeinto para insertar un proveedor en la base de datos
+        //TODO: Procedimiento para insertar un proveedor en la base de datos
     case 'insertar':
         $Nombre_Empresa = $_POST["Nombre_Empresa"];
         $Direccion = $_POST["Direccion"];
@@ -45,7 +45,7 @@ switch ($_GET["op"]) {
         $datos = $proveedores->insertar($Nombre_Empresa, $Direccion, $Telefono, $Contacto_Empresa, $Teleofno_Contacto);
         echo json_encode($datos);
         break;
-        //TODO: Procedimeinto para actualziar un proveedor en la base de datos
+        //TODO: Procedimiento para actualziar un proveedor en la base de datos
     case 'actualizar':
         $idProveedores = $_POST["idProveedores"];
         $Nombre_Empresa = $_POST["Nombre_Empresa"];
@@ -57,7 +57,7 @@ switch ($_GET["op"]) {
         $datos = $proveedores->actualizar($idProveedores, $Nombre_Empresa, $Direccion, $Telefono, $Contacto_Empresa, $Teleofno_Contacto);
         echo json_encode($datos);
         break;
-        //TODO: Procedimeinto para eliminar un proveedor en la base de datos
+        //TODO: Procedimiento para eliminar un proveedor en la base de datos
     case 'eliminar':
         $idProveedores = $_POST["idProveedores"];
         $datos = array();
