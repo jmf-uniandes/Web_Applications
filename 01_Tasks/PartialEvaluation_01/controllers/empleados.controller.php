@@ -7,7 +7,7 @@ $method = $_SERVER["REQUEST_METHOD"];
 if ($method == "OPTIONS") {
     die();
 }
-TODO: controlador de empleados
+//TODO: controlador de empleados
 
 require_once('../models/empleados.model.php');
 //error_reporting(0);
