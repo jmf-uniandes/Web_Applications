@@ -7,7 +7,7 @@ $method = $_SERVER["REQUEST_METHOD"];
 if ($method == "OPTIONS") {
     die();
 }
-TODO: controlador de StatusProyectos
+//TODO: controlador de StatusProyectos
 
 require_once('../models/status_proyectos.model.php');
 error_reporting(0);
