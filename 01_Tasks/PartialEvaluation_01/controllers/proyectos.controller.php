@@ -7,7 +7,7 @@ $method = $_SERVER["REQUEST_METHOD"];
 if ($method == "OPTIONS") {
     die();
 }
-TODO: controlador de proyectos
+//TODO: controlador de proyectos
 
 require_once('../models/proyectos.model.php');
 error_reporting(0);
