@@ -7,7 +7,7 @@ $method = $_SERVER["REQUEST_METHOD"];
 if ($method == "OPTIONS") {
     die();
 }
-TODO: controlador de AsignacionProyectos
+//TODO: controlador de AsignacionProyectos
 
 require_once('../models/asignacion_proyectos.model.php');
 error_reporting(0);
